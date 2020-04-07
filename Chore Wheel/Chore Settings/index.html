@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Chores</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/780b259326.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="homeIcon">
+        <a href="../../HomePage/index.html"><img src="SmallLogo.jpg" align="left"></a>
+        <a href="../Chore%20Calender/index.html"><i class="fa fa-calendar fa-3x"></i></a>
+        <a href="../index.html"><i class="fa fa-circle-o-notch fa-3x"></i></a>
+    </div>
+
+    <div><center style="font-size: 90px; color:#fea680; font-family:Avenir W01, futura, Lucida grande, sans-serif !important;"><b>Chores</b></center></div>
+
+
+    <table class="MyChores">
+        <thead class="MyChoreTblHead">
+            <tr class="header" style="color:#008f95;">
+                <td><b>Chore</b></td>
+                <td><b>Due</b></td>
+                <td><b>Status</b></td>
+            </tr>
+        </thead>
+        <tbody class="ChoreTblBody">
+            <tr>
+                <td>Do Dishes</td>
+                <td>4/20/19</td>
+                <td>
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" checked>
+                        <label class="onoffswitch-label" for="myonoffswitch1">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Wipe Counters</td>
+                <td>4/26/19</td>
+                <td>
+                    <div class="onoffswitch">
+                        <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" checked>
+                        <label class="onoffswitch-label" for="myonoffswitch2">
+                            <span class="onoffswitch-inner"></span>
+                            <span class="onoffswitch-switch"></span>
+                        </label>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <table id="ChoreTbl" class="choreHead">
+        <thead class="ChoreTblHead">
+        <tr class="header" style="color:#008f95;">
+            <td id="name_row2"><b>Chore</b></td>
+            <td id="country_row2"><b>Time Frame to Complete</b></td>
+            <td id="age_row2"><b>Rotation Cycle</b></td>
+            <td></td>
+        </thead>
+        <tbody class="ChoreTblBody">
+        <tr id="row1">
+            <td id="chore_row1">Wash Floor</td>
+            <td id="duration_row1">3 days</td>
+            <td id="rotation_row1">
+                <select class="selectpicker1">
+                    <option>Daily</option>
+                    <option>Weekly</option>
+                    <option>Monthly</option>
+                </select>
+            </td>
+            <td>
+                <i id="edit_button1" class="fa fa-pencil" onclick="edit_row('1')"></i>
+                <i class="fa fa-floppy-o" id="save_button1" onclick="save_row('1')"></i>
+                <i class="fa fa-trash" onclick="delete_row('1')"></i>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" id="new_chore"></td>
+            <td><input type="text" id="new_duration"></td>
+            <td>
+                <select class="selectpicker1">
+                    <option>Daily</option>
+                    <option>Weekly</option>
+                    <option>Monthly</option>
+                </select>
+            </td>
+            <td><input type="button" class="add pageButton" onclick="add_row();" value="Add Chore"></td>
+        </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <table class="nagCentive table-hover" style="margin-top: 3%">
+        <thead class="nagCentiveHead">
+        <tr class="header" style="color:#008f95; ">
+            <td><b>Nagcentive</b>
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                <i class="fa fa-trash" aria-hidden="true"></i>
+                <i class="fa fa-pencil" aria-hidden="true"></i>
+            </td>
+        </tr>
+        </thead>
+        <tbody class="nagCentiveBody">
+        <tr>
+            <td>Eat Dirt</td>
+        </tr>
+        <tr>
+            <td>Pay everyone $1</td>
+        </tr>
+        <tr>
+            <td>Get Slapped in the Face</td>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

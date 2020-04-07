@@ -1,0 +1,82 @@
+body{
+    background: #fff1d9;
+    font-family:Avenir W01, futura, Lucida grande, sans-serif !important;
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #008f95;
+    margin: 1em 0;
+    padding-top: 2%;
+}
+
+h1{
+    font-size: 20px;
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+    color:#fea680;
+    padding-bottom: 0px;
+}
+
+.box{
+    width: 2px;
+    height: 2px;
+}
+
+.pink{
+    background: #eb6e80;
+}
+
+.yellow{
+    background: #e9b000;
+}
+
+
+table {
+    width:100%;
+    align:center;
+    margin-left: 2%;
+}
+
+h1{
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+    font-size: 30px;
+    color:#fea680;
+    padding-bottom: 0px;
+    margin-left:2%;
+}
+
+input{
+    background-color: #fff1d9;
+    border: solid;
+    border-color: #fea680;
+}
+
+.pageButton{
+    border: none;
+}
+
+.header{
+    color:#008f95;
+}
+
+
+.fa-trash{
+    color: #e24e42;
+    padding-right: 3px;
+}
+
+.fa-pencil{
+    color: #008f95;
+}
+
+.fa-plus{
+    color:#e9b000;
+    margin-left: auto;
+    padding-right: 3px;
+}
+
+tr:nth-child(even) {color: #eb6e80}
+tr:nth-child(odd) {color: #e9b000}

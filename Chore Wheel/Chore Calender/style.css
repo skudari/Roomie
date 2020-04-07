@@ -1,0 +1,40 @@
+body{
+    background:#fff1d9;
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+}
+
+.btn{
+    color:#fff1d9 ;
+    background: #eb6e80 ;
+    border-color: #ba5d5d;
+}
+
+.btn:hover{
+    color:#fff1d9 ;
+    background: #eb6e80 ;
+    border-color: #ba5d5d;
+}
+
+.btn:active, .btn:focus{
+    color:#fff1d9 ;
+    background: #e9b000;
+    border-color: #ba5d5d;
+}
+
+
+/***********ICON BAR***************/
+
+.fa-circle-o-notch{
+    color: #008f95;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-right: 15px;
+}
+
+.fa-th-list{
+    color: #e9b000;
+}
+
+.fa-th-list:hover, .fa-circle-o-notch:hover{
+    color: #eb6e80;
+}

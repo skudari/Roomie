@@ -1,0 +1,126 @@
+body{
+    background: #fff1d9;
+}
+
+.fa-pencil{
+    color: #008f95;
+}
+
+.fa-trash{
+    color: #e24e42;
+}
+
+.fa-floppy-o{
+    color: #e9b000;
+}
+
+
+.billHead{
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+    font-size: 30px;
+    margin: auto;
+}
+
+.btn{
+    background: #008f95;
+    border-radius: 19px;
+    color: #fff1d9;
+    height:50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.btn:hover{
+    background: #005a60;
+    color: #fff1d9;
+}
+
+td, th{
+    padding-left: 5%;
+}
+/********DROP DOWN MENU ***********/
+#myInput {
+    border-box: box-sizing;
+
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+    padding: 14px 20px 12px 45px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(254, 166, 128, 0.68);
+    min-width: 230px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: rgba(235, 110, 128, 0.65)
+}
+
+.show {display:block;}
+
+/****************** SWITCH **********************/
+.onoffswitch {
+    position: relative; width: 95px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #e9b000; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "UNPAID";
+    padding-left: 10px;
+    background-color: #e24e42; color: #fff1d9;
+}
+.onoffswitch-inner:after {
+    content: "PAID";
+    padding-right: 10px;
+    background-color: #008f95; color: #fff1d9;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #fff1d9;
+    position: absolute; top: 0; bottom: 0;
+    right: 61px;
+    border: 2px solid #e9b000; border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}

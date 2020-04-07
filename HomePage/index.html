@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://use.fontawesome.com/780b259326.js"></script>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+        <title>Home Page</title>
+    </head>
+    <body>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><i class="fa fa-user-circle-o fa-3x" aria-hidden="true"></i></button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="../UserProfile/index.html">My Profile</a>
+                <a href="#support">Support</a>
+                <a href="#logOut">Log Out</a>
+            </div>
+        </div>
+
+        <script>
+            function myFunction(){
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            function filterFunction() {
+                var input, filter, ul, li, a, i;
+                input = document.getElementById("myInput");
+                filter = input.value.toUpperCase();
+                div = document.getElementById("myDropdown");
+                a = div.getElementsByTagName("a");
+                for (i = 0; i < a.length; i++) {
+                    if (a[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        a[i].style.display = "";
+                    } else {
+                        a[i].style.display = "none";
+                    }
+                }
+            }
+        </script>
+
+        <div><center><img src="../Joint%20Grocery%20List/RoomieLogo.png"></center></div>
+        <div><center style="font-size: 100px; color:#fea680; font-family:Avenir W01, futura, Lucida grande, sans-serif !important;">ROOMIE</center></div>
+
+        <table style="width:100%">
+            <thead></thead>
+            <tbody>
+                <tr class="icons">
+                        <td>
+                            <center>
+                                <a href="../Joint%20Grocery%20List/index.html">
+                                    <i class="fa fa-shopping-cart fa-border fa-5x"  aria-hidden="true" ></i>
+                                </a>
+                            </center>
+                        </td>
+
+                        <td>
+                            <center>
+                                <a href="../Bills/index.html">
+                                    <i class="fa fa-university fa-border fa-5x"  aria-hidden="true"></i>
+                                </a>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr class="icons">
+                        <td>
+                            <center>
+                                <a href="../Chore%20Wheel/index.html">
+                                    <i class="fa fa-trash fa-border fa-5x"  aria-hidden="true"></i>
+                                </a>
+                            </center>
+                        </td>
+                        <td>
+                            <center>
+                                <a href="../SockOnTheDoor/index.html">
+                                    <i class="fa fa-bell-slash fa-border fa-5x"  aria-hidden="true"></i>
+                                </a>
+                            </center>
+                        </td>
+                    </tr>
+                    <tr class="icons">
+                        <td>
+                            <center>
+                                <a href="../Notes/index.html">
+                                    <i class="fa fa-sticky-note fa-border fa-5x"  aria-hidden="true"></i>
+                                </a>
+                            </center>
+                        </td>
+
+                        <td>
+                            <center>
+                                <a href="../Parking/index.html">
+                                    <i class="fa fa-car fa-border fa-5x"  aria-hidden="true"></i>
+                                </a>
+                            </center>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

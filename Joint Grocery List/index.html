@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grocery List</title>
+    <script src="https://use.fontawesome.com/780b259326.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script  type='text/javascript' src='script.js'></script>
+</head>
+<body>
+    <div class="homeIcon">
+        <a href="../HomePage/index.html">
+            <img src="SmallLogo.jpg" align="left">
+        </a>
+    </div>
+
+    <div><center style="font-size: 90px; color:#fea680; font-family:Avenir W01, futura, Lucida grande, sans-serif !important;"><b>Shopping List</b></center></div>
+
+    <div class="row">
+        <div class="column">
+            <div id="myDIV1" class="header1">
+                <h2 style="font-size: 250%; color:#fff1d9; font-family:Avenir W01, futura, Lucida grande, sans-serif !important;">Amir's List</h2>
+                <input type="text" id="myInput1" placeholder="Item...">
+                <input type="text" id="myInput1B" placeholder="Brand/Quantity...">
+                <span onclick="newElement1()" class="addBtn">Add</span>
+            </div>
+            <ul id="myUL1">
+            </ul>
+        </div>
+        <div class="column">
+            <div id="myDIV2" class="header2">
+                <h2 style="font-size: 250%; color:#fff1d9; font-family:Avenir W01, futura, Lucida grande, sans-serif !important;">Sush's List</h2>
+                <input type="text" id="myInput2" placeholder="Item...">
+                <input type="text" id="myInput2B" placeholder="Brand/Quantity...">
+                <span onclick="newElement2()" class="addBtn">Add</span>
+            </div>
+
+            <ul id="myUL2"></ul>
+        </div>
+        <div class="column">
+            <div id="myDIV3" class="header1">
+                <h2 style="font-size: 250%; color:#fff1d9; font-family:Avenir W01, futura, Lucida grande, sans-serif !important;">Daniel's List</h2>
+                <input type="text" id="myInput3" placeholder="Item...">
+                <input type="text" id="myInput3B" placeholder="Brand/Quantity...">
+                <span onclick="newElement3()" class="addBtn">Add</span>
+            </div>
+
+            <ul id="myUL3"></ul>
+        </div>
+        <div class="column">
+            <div id="myDIV4" class="header3">
+                <h2 style="font-size: 250%; color:#fff1d9; font-family:Avenir W01, futura, Lucida grande, sans-serif !important;">House List</h2>
+                <input type="text" id="myInput4" placeholder="Item...">
+                <input type="text" id="myInput4B" placeholder="Brand/Quantity...">
+                <span onclick="newElement4()" class="addBtn">Add</span>
+            </div>
+
+            <ul id="myUL4"></ul>
+        </div>
+    </div>
+</body>
+</html>

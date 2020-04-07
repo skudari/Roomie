@@ -1,0 +1,49 @@
+body{
+    background: #fff1d9;
+}
+
+button, input, select, textarea {
+    align-self: center;
+    height: 40px;
+    border: none;
+    background: #fff1d9;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.btn-info{
+    background: #eb6e80;
+    border-color: #eb6e80;
+    color: #fff1d9;
+}
+
+.btn-info:hover{
+    background: #cf6868;
+    border-color: #cf6868;
+    color: #fff1d9;
+}
+
+.btn-danger{
+    background: #e24e42;
+    border-color: #e24e42;
+    color: #fff1d9;
+}
+
+.btn-danger:hover{
+    background: #b44c40;
+    border-color: #b44c40;
+    color: #fff1d9;
+}
+
+.btn-primary{
+    background: #e9b000;
+    border-color: #e9b000;
+    color: #fff1d9;
+}
+
+.btn-primary:hover{
+    background: #b48400;
+    border-color: #b48400;
+    color: #fff1d9;
+}

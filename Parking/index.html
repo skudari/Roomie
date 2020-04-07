@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <script src="https://use.fontawesome.com/780b259326.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <div class="homeIcon">
+            <a href="../HomePage/index.html">
+                <img src="SmallLogo.jpg" align="left">
+            </a>
+        </div>
+
+        <div class="heading"><center><b>Parking Rotation</b></center></div>
+        <section class="ParkingSection">
+            <div class="NumParkingSpots">
+                <b>Number Of Parking Spots:</b>
+                <input id="number" type="number" class="numSpots">
+            </div>
+
+        </section>
+
+        <hr>
+
+        <span class="sr-only">Loading...</span>
+
+        <div class="container"><center>
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <button draggable="true" ondragstart="drag(event)" id="drag1">Sush</button>
+                <button draggable="true" ondragstart="drag(event)" id="drag2">Amir</button>
+                <button draggable="true" ondragstart="drag(event)" id="drag3">Aldo</button>
+            </div>
+           <table class="table">
+                <thead>
+                <tr>
+                    <th>
+                        <center>
+                            <i id="car1" class="fa fa-car fa-border fa-5x car1" aria-hidden="true"></i>
+                            SPOT 2
+                        </center>
+                    </th>
+                    <th>
+                        <center>
+                            <i id="car2" class="fa fa-car fa-border fa-5x car2" aria-hidden="true"></i>
+                            SPOT 1
+                        </center>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </center>
+                    </td>
+                    <td>
+                        <center>
+                            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                        </center>
+                    </td>
+                </tr>
+                </thead>
+            </table></center>
+        </div>
+    </body>
+</html>

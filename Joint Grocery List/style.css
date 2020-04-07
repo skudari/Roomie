@@ -1,0 +1,227 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff1d9;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo{
+    right: 90%;
+}
+/* Remove margins and padding from the list */
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the list items */
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgba(0, 143, 149, 0.6);
+    font-size: 18px;
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ul > div {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgba(0, 143, 149, 0.59);
+    font-size: 18px;
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+    transition: 0.2s;
+
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Set all odd list items to a different color (zebra-stripes) */
+ul div:nth-child(odd) {
+    background: rgba(235, 110, 128, 0.51);
+}
+
+/* Darker background-color on hover */
+ul div:hover {
+    background: rgba(233, 176, 0, 0.85);
+}
+
+/* When clicked on, add a background color and strike out text */
+ul div.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul div.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+
+/* Style the close button */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: rgba(233, 176, 0, 0.85);
+    color: black;
+    padding: 12px 16px 12px 16px;
+}
+
+/* Style the header */
+.header1 {
+    background-color: rgba(0, 143, 149, 0.76);
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+.header2 {
+    background-color: rgba(233, 176, 0, 0.85);
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+.header3 {
+    background-color: rgba(226, 78, 66, 0.76);
+    padding: 30px 40px;
+    color: white;
+    text-align: center;
+}
+
+
+/* Clear floats after the header */
+.header1:after, .header2:after, .header3:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the input */
+input {
+    border: none;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+    padding: 10px;
+    width: 75%;
+    background: rgb(254, 166, 128);
+    color: #fff1d9;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.addBtn:hover {
+    background-color: rgb(228, 148, 122);
+}
+
+.custom {
+    background: #fff1d9;
+    border-radius: 10px;
+}
+
+/********* USER PROFILE ********/
+
+#myInput {
+    border-box: box-sizing;
+
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+    padding: 14px 20px 12px 45px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(254, 166, 128, 0.68);
+    min-width: 230px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: rgba(235, 110, 128, 0.65)
+}
+
+.show {display:block;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+

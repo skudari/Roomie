@@ -1,0 +1,109 @@
+body{
+    background: #fff1d9;
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+}
+
+.car1{
+    color: #e9b000;
+    border-color: #e9b000;
+}
+
+.car2{
+    color: #eb6e80;
+    border-color: #eb6e80;
+}
+
+.car1:hover, .car2:hover{
+    background: rgba(0, 143, 149, 0.73);
+    border-color: #00575d;
+}
+
+.table{
+    border-spacing: 200px;
+    color: #008f95;
+}
+
+.heading{
+    font-size: 90px; color:#fea680;
+    font-family:Avenir W01, futura, Lucida grande, sans-serif !important;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(254, 166, 128, 0.68);
+    min-width: 230px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(207, 104, 104, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {background-color: rgba(235, 110, 128, 0.65)
+}
+
+
+.NumParkingSpots{
+    padding-top: 5%;
+    color: #008f95;
+    margin-left:2%;
+    font-size: 30px;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #008f95;
+    margin: 1em 0;
+    padding-top: 2%;
+}
+
+
+
+.numSpots{
+    background:#fff1d9;
+    border: solid;
+    border-color: #e9b000;
+}
+
+.show {display:block;}
+
+#drag1,#drag2, #drag3{
+    border-radius: 5px;
+    border-color: #e9b000;
+    background: #eb6e80;
+    color: #fff1d9;
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+    font-size: large;
+    padding-top: 4px;
+}
+
+#div2, #div3 {
+    width: 100%;
+    height: 65px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px solid #008f95;
+    border-radius: 15px;
+}
+
+#div1 {
+    width: 30%;
+    height: 15%;
+    margin: 10px;
+    padding: 10px;
+    border: 5px solid #e24e42;
+    border-radius: 15px;
+}

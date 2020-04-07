@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Bills</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/780b259326.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript" src="script.js"></script>
+
+    </head>
+    <body>
+        <div class="homeIcon">
+            <a href="../HomePage/index.html">
+                <img src="SmallLogo.jpg" align="left">
+            </a>
+        </div>
+
+        <div><center style="font-size: 90px; color:#fea680; font-family:Avenir W01, futura, Lucida grande, sans-serif !important;"><b>Bills</b></center></div>
+        <table class="billHead table-hover"  width="70%" align="center">
+            <thead class="BillTblHead">
+                <tr class="header" style="color:#008f95; ">
+                    <td id="name_row1"><b>Bill Name</b></td>
+                    <td id="price_row1"><b>Price</b></td>
+                    <td id="due_row1"><b>Due Date</b></td>
+                    <td id="remind_row1"><b>Remind Before</b></td>
+                    <td id="status_row1"><b>Status</b></td>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="color: #eb6e80">
+                    <td>Electric</td>
+                    <td>$30</td>
+                    <td>2/9/2020</td>
+                    <td>2 Days</td>
+                    <td style="color: #e24e42">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch1" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch1">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="https://venmo.com/account/sign-in">
+                            <button type="button" class="btn">PAY NOW</button>
+                        </a>
+                    </td>
+                    <td>
+                        <i id="edit_button" class="fa fa-pencil" onclick="edit_row('1')"></i>
+                        <i class="fa fa-floppy-o" id="save_button" onclick="save_row('1')"></i>
+                        <i class="fa fa-trash" onclick="delete_row('1')"></i>
+                    </td>
+                </tr>
+                <tr style="color: #e9b000">
+                    <td>Water</td>
+                    <td>$23</td>
+                    <td>2/14/2020</td>
+                    <td>4 Days</td>
+                    <td class="paid" style="color: #016204">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch2" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch2">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </td>
+                    <td><button type="button" class="btn" onclick="alert('You Already Paid this Bill!')">PAY NOW</button></td>
+                    <td>
+                        <i id="edit_button1" class="fa fa-pencil" onclick="edit_row('2')"></i>
+                        <i class="fa fa-floppy-o" id="save_button1" onclick="save_row('2')"></i>
+                        <i class="fa fa-trash" onclick="delete_row('2')"></i>
+                    </td>
+                </tr>
+                <tr style="color: #eb6e80">
+                    <td>WiFi</td>
+                    <td>$10</td>
+                    <td>1/9/2020</td>
+                    <td>3 Days</td>
+                    <td class="unpaid" style="color: #e24e42">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch3" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch3">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </td>
+                    <td>
+                        <a href="https://venmo.com/account/sign-in">
+                            <button type="button" class="btn">PAY NOW</button>
+                        </a>
+                    </td>
+                    <td>
+                        <i id="edit_button2" class="fa fa-pencil" onclick="edit_row('3')"></i>
+                        <i class="fa fa-floppy-o" id="save_button2" onclick="save_row('3')"></i>
+                        <i class="fa fa-trash" onclick="delete_row('3')"></i>
+                    </td>
+                </tr>
+                <tr style="color: #e9b000">
+                    <td>Personal Expenses</td>
+                    <td>$230</td>
+                    <td>4/20/0420</td>
+                    <td>7 Days</td>
+                    <td class="paid" style="color: #016204">
+                        <div class="onoffswitch">
+                            <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch4" checked>
+                            <label class="onoffswitch-label" for="myonoffswitch4">
+                                <span class="onoffswitch-inner"></span>
+                                <span class="onoffswitch-switch"></span>
+                            </label>
+                        </div>
+                    </td>
+                    <td><button type="button" class="btn" onclick="alert('You Already Paid this Bill!')">PAY NOW</button></td>
+                    <td>
+                        <i id="edit_button3" class="fa fa-pencil" onclick="edit_row('4')"></i>
+                        <i class="fa fa-floppy-o" id="save_button3" onclick="save_row('4')"></i>
+                        <i class="fa fa-trash" onclick="delete_row('4')"></i>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </body>
+</html>

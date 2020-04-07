@@ -1,0 +1,204 @@
+body{
+    background: #fff1d9;
+    font-family:Avenir W01, futura, Lucida grande, sans-serif !important;
+    font-size: large;
+}
+
+.choreHead, .nagCentive, .MyChores{
+    font-size: 30px;
+}
+
+.PriceReminder a p {display: none;}
+
+.PriceReminder a:hover p {display: block}
+
+.tooltip .tooltiptext {
+    width: 120px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #008f95;
+    color: #fff1d9;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.fa-trash{
+    color: #e24e42;
+    padding-right: 3px;
+}
+
+.fa-pencil{
+    color: #008f95;
+}
+
+.fa-plus{
+    color:#e9b000;
+    margin-left: auto;
+    padding-right: 3px;
+}
+
+
+.numSpots{
+    background:#fff1d9;
+    border: solid;
+    border-color: #e9b000;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #008f95;
+    margin: 1em 0;
+    padding-top: 2%;
+}
+
+.selectpicker1{
+    background: rgba(235, 110, 128, 0.32);
+    border-color: #fea680;
+}
+
+.PageHeader{
+    font-size: 90px;
+    color:#fea680;
+    font-family:Avenir W01, futura, Lucida grande, sans-serif !important;
+}
+
+.NoteHeading{
+    margin-left: 2%;
+    color: #e9b000
+}
+.NumParkingSpots{
+    color: #008f95;
+    margin-left:2%;
+}
+table {
+    width:100%;
+    align:center;
+    margin-left: 2%;
+}
+
+h1{
+    font-family: "Avenir W01", "futura", "Lucida grande", sans-serif;
+    font-size: 24px;
+    color:#fea680;
+    padding-bottom: 0px;
+    margin-left:2%;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 3px solid #008f95;
+    margin: 1em 0;
+    padding-top: 2%;
+}
+
+
+input{
+    background-color: #fff1d9;
+    border: solid;
+    border-color: #fea680;
+}
+
+.pageButton{
+    border: none;
+}
+
+.header{
+    color:#008f95;
+}
+
+tr:nth-child(even) {color: #eb6e80}
+tr:nth-child(odd) {color: #e9b000}
+
+
+/*****SWITCH******/
+.onoffswitch {
+    position: relative; width: 95px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #e9b000; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "TO DO";
+    padding-left: 10px;
+    background-color: #e24e42; color: #fff1d9;
+}
+.onoffswitch-inner:after {
+    content: "DONE";
+    padding-right: 10px;
+    background-color: #008f95; color: #fff1d9;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #fff1d9;
+    position: absolute; top: 0; bottom: 0;
+    right: 61px;
+    border: 2px solid #e9b000; border-radius: 20px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+
+/***********ICON BAR***************/
+
+.fa-circle-o-notch{
+    color: #008f95;
+}
+
+.fa-calendar{
+    color: #e9b000;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-right: 15px;
+}
+
+.fa-calendar:hover, .fa-circle-o-notch:hover{
+    color: #eb6e80;
+}
+
+
